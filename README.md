@@ -28,3 +28,10 @@ The main awkward edge is the zero polynomial: `gcd(0, 0)` is defined as `0` here
 ## Exported names
 
 - `polynomial_gcd(a, b)` — compute the monic GCD of two polynomials given as coefficient lists in increasing degree order.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
