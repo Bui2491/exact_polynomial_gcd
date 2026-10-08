@@ -1,6 +1,6 @@
 [project]
 name = "exact-polynomial-gcd"
-version = "0.1.1"
+version = "0.1.2"
 description = "Computes the greatest common divisor of two polynomials with rational coefficients using the Euclidean algorithm over Fraction."
 requires-python = ">=3.10"
 dependencies = []
